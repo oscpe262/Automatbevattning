@@ -68,9 +68,9 @@ Rad 1: Klockan 18:00 varje jämn dag (märk väl att detta ej är varannan dag i
 
 Rad 2: Klockan 18:01 varje dag, kör pump 2 i 30 sekunder.
 
-`0 18 \*/2 \* \* /root/pump.sh 1 30 >/dev/null 2>&1`
+`0 18 */2 * * /root/pump.sh 1 30 >/dev/null 2>&1`
 
-`0 18 \* \* \* /root/pump.sh 2 30 >/dev/null 2>&1`
+`0 18 * * * /root/pump.sh 2 30 >/dev/null 2>&1`
 
 ## Sammanfattning
 De värden som används här är initiala körningsvärden specifikt för de pumpar och antal krukor jag använder. Innan du börjar bevattna bör du provköra systemet och mäta upp flödeshastigheter för just dina pumpar.
