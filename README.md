@@ -51,7 +51,7 @@ Detta script gör först och främst ett par koller så att vi åkallar det korr
 
 Syntaxen är exempelvis (för 22 sekunders pumpning på pump 3):
 
- pump.sh 3 22
+`pump.sh 3 22`
 
 Scriptet åkallar pinout.sh (default är att det läggs i roots hemkatalog) och sätter aktuell pin till `hög` (1), väntar pumptiden ut, och sätter sedan genom samma script aktuell pin till `låg` (0).
 
@@ -63,11 +63,14 @@ Erbjuder stödfunktioner för exportering av pin och riktning (in/ut). In använ
 
 ### crontab
 Aktuell crontab (`# crontab -e`) gör följande:
+
 Rad 1: Klockan 18:00 varje jämn dag (märk väl att detta ej är varannan dag i månader med 31/29 dagar) alla månader, oavsett veckodag, kör pump 1 i 30 sekunder utan textoutput.
+
 Rad 2: Klockan 18:01 varje dag, kör pump 2 i 30 sekunder.
 
- 0 18 \*/2 \* \* /root/pump.sh 1 30 >/dev/null 2>&1
- 0 18 \* \* \* /root/pump.sh 2 30 >/dev/null 2>&1
+`0 18 \*/2 \* \* /root/pump.sh 1 30 >/dev/null 2>&1`
+
+`0 18 \* \* \* /root/pump.sh 2 30 >/dev/null 2>&1`
 
 ## Sammanfattning
 De värden som används här är initiala körningsvärden specifikt för de pumpar och antal krukor jag använder. Innan du börjar bevattna bör du provköra systemet och mäta upp flödeshastigheter för just dina pumpar.
