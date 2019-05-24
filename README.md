@@ -35,8 +35,41 @@ Beskrivning, (Inköpsställe, pris inkl. frakt)
 - Diverse skruv, brickor, muttrar, kablage, lödtenn och kabelskor. (Kjell & Co, okänt pris)
 
 ## Konstruktion
+Då jag som sagt bor i hyreslägenhet är verktyg och möjlighet att använda dessa tämligen begränsade. Tack vare en god kollega löstes dock en sådan enkel sak som att såga upp skärbrädan i två delar. 
+Dock innebar detta att jag inte har någon fin bild på det steget.
 
+Jag bemödade mig inte heller med att ta bilder på alla steg i processen, exempelvis vid borrandet av hål, men om du avser att replikera detta bygge räknar jag kallt med att du vet hur en borrmaskin fungerar,
+hur man mäter ut var hål ska sitta och hur man mäter diametern på skruv och borr.
 
+### Pumpar, basplattor och tank
+"Tanken" förblir omodifierad. Basplattan för pumparna får ligga löst då fästandet av plattan i botten skulle medföra en risk för läckage, något som inte är önskat.
+Pumparna fästes med medföljande fästen, skruv, bricka och mutter. Skruvskallarna försänktes på undersidan för att få ner plattan så nära botten som möjligt.
+[bild 1]
+
+På tankens lock borrades hål för slangar (i hörnen), för montering av elektronikens basplatta samt ett hål rakt genom basplatta och lock för dragning av strömkablar till pumparna. Lockets plast var tämligen hård att borra i, men skärbrädan var lättborrad.
+[bild 2]
+
+Elektronikens basplatta krävde förstås ytterligare några hål för att montera RPi:n och nätagget. Även knutpunkter för strömförsörjningen krävde hål. (Potentiometern på bilden kom ej att användas i slutänden då pumparna höll lagom tryck vid 12 V). Därefter monterades RPi och nätagg och kablage för strömförsörjning drogs. Därefter kopplades jord till pump, samt pump och 12 V till relä.
+[bild 3]
+[bild 4]
+
+### Färdigställande av mjukvara
+Sedvanlig installation av Raspbian genomfördes, GPIO-pinnar tilläts att användas och likaså SSH. 
+För enkelhetens skull lät jag script och schemaläggning köras som root för att ha enkel tillgång till GPIO-pinnarna. 
+Självklart inaktiverades defaultkontot (`pi`) och inloggning till root-kontot tilläts endast via nyckelbaserad autentisering.
+Boot till GUI stängdes av.
+
+### Funktionstest
+Dags så att strömsätta det hela för en funktionstest.
+[video 1]
+
+Ja, det verkar spruta på rätt så skapligt. Vi kompletterar med en matarslang upp till brukshöjd och testar lite T-kopplingar och droppslangar.
+[video 2]
+
+Fungerar till synes som tänkt. En enklare mätning visar på en faktisk pumpkapacitet om ungefär 1,2 l/min, ett värde vi kan använda för att beräkna körtiden för pumparna.
+
+Allt som återstår är då att dra slangar och montera kopplingar.
+[bild 5]
 
 ## Mjukvara
 Då jag är \*nixadmin till yrket föll det sig naturligt att nyttja ett enkelt shellscript till att styra reläerna, vilket i sin tur kan schemaläggas i cron.
