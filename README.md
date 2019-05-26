@@ -52,6 +52,7 @@ På tankens lock borrades hål för slangar (i hörnen), för montering av elekt
 Elektronikens basplatta krävde förstås ytterligare några hål för att montera RPi:n och nätagget. Även knutpunkter för strömförsörjningen krävde hål. (Potentiometern på bilden kom ej att användas i slutänden då pumparna höll lagom tryck vid 12 V). Därefter monterades RPi och nätagg och kablage för strömförsörjning drogs. Därefter kopplades jord till pump, samt pump och 12 V till relä.
 [bild 3]
 [bild 4]
+[bild 5]
 
 ### Färdigställande av mjukvara
 Sedvanlig installation av Raspbian genomfördes, GPIO-pinnar tilläts att användas och likaså SSH. 
@@ -69,7 +70,7 @@ Ja, det verkar spruta på rätt så skapligt. Vi kompletterar med en matarslang 
 Fungerar till synes som tänkt. En enklare mätning visar på en faktisk pumpkapacitet om ungefär 1,2 l/min, ett värde vi kan använda för att beräkna körtiden för pumparna.
 
 Allt som återstår är då att dra slangar och montera kopplingar.
-[bild 5]
+[bild 6 (ej tagen)]
 
 ## Mjukvara
 Då jag är \*nixadmin till yrket föll det sig naturligt att nyttja ett enkelt shellscript till att styra reläerna, vilket i sin tur kan schemaläggas i cron.
