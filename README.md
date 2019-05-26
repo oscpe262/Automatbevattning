@@ -48,12 +48,16 @@ Pumparna fästes med medföljande fästen, skruv, bricka och mutter. Skruvskalla
 ![Basplatta med pumpar](/imgs/20190515_195812.jpg)
 
 På tankens lock borrades hål för slangar (i hörnen), för montering av elektronikens basplatta samt ett hål rakt genom basplatta och lock för dragning av strömkablar till pumparna. Lockets plast var tämligen hård att borra i, men skärbrädan var lättborrad.
-[bild 2]
+
+![Basplatta och lock](/imgs/20190515_202016.jpg)
 
 Elektronikens basplatta krävde förstås ytterligare några hål för att montera RPi:n och nätagget. Även knutpunkter för strömförsörjningen krävde hål. (Potentiometern på bilden kom ej att användas i slutänden då pumparna höll lagom tryck vid 12 V). Därefter monterades RPi och nätagg och kablage för strömförsörjning drogs. Därefter kopplades jord till pump, samt pump och 12 V till relä.
-[bild 3]
-[bild 4]
-[bild 5]
+
+![RPi](/imgs/20190515_203617.jpg)
+
+![RPi och nätagg](/imgs/20190515_210640.jpg)
+
+![RPi och nätagg på lock](/imgs/20190515_211540.jpg)
 
 ### Färdigställande av mjukvara
 Sedvanlig installation av Raspbian genomfördes, GPIO-pinnar tilläts att användas och likaså SSH. 
@@ -63,15 +67,15 @@ Boot till GUI stängdes av.
 
 ### Funktionstest
 Dags så att strömsätta det hela för en funktionstest.
-[video 1]
+[![pumptest1](https://img.youtube.com/vi/mDfbsn3C4h4/maxresdefault.jpg)](https://youtu.be/mDfbsn3C4h4)
 
 Ja, det verkar spruta på rätt så skapligt. Vi kompletterar med en matarslang upp till brukshöjd och testar lite T-kopplingar och droppslangar.
-[video 2]
+[![pumptest2](https://img.youtube.com/vi/GqwVUgUwg3w/maxresdefault.jpg)](https://youtu.be/GqwVUgUwg3w)
 
 Fungerar till synes som tänkt. En enklare mätning visar på en faktisk pumpkapacitet om ungefär 1,2 l/min, ett värde vi kan använda för att beräkna körtiden för pumparna.
 
 Allt som återstår är då att dra slangar och montera kopplingar.
-[bild 6 (ej tagen)]
+![bild 6 (ej tagen)]()
 
 ## Mjukvara
 Då jag är \*nixadmin till yrket föll det sig naturligt att nyttja ett enkelt shellscript till att styra reläerna, vilket i sin tur kan schemaläggas i cron.
