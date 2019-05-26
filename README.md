@@ -67,10 +67,12 @@ Boot till GUI stängdes av.
 
 ### Funktionstest
 Dags så att strömsätta det hela för en funktionstest.
-[![pumptest1](https://img.youtube.com/vi/mDfbsn3C4h4/maxresdefault.jpg)](https://youtu.be/mDfbsn3C4h4)
+
+[![pumptest1](https://img.youtube.com/vi/mDfbsn3C4h4/hqdefault.jpg)](https://youtu.be/mDfbsn3C4h4)
 
 Ja, det verkar spruta på rätt så skapligt. Vi kompletterar med en matarslang upp till brukshöjd och testar lite T-kopplingar och droppslangar.
-[![pumptest2](https://img.youtube.com/vi/GqwVUgUwg3w/maxresdefault.jpg)](https://youtu.be/GqwVUgUwg3w)
+
+[![pumptest2](https://img.youtube.com/vi/GqwVUgUwg3w/hqdefault.jpg)](https://youtu.be/GqwVUgUwg3w)
 
 Fungerar till synes som tänkt. En enklare mätning visar på en faktisk pumpkapacitet om ungefär 1,2 l/min, ett värde vi kan använda för att beräkna körtiden för pumparna.
 
