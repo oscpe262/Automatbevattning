@@ -44,7 +44,8 @@ hur man mäter ut var hål ska sitta och hur man mäter diametern på skruv och 
 ### Pumpar, basplattor och tank
 "Tanken" förblir omodifierad. Basplattan för pumparna får ligga löst då fästandet av plattan i botten skulle medföra en risk för läckage, något som inte är önskat.
 Pumparna fästes med medföljande fästen, skruv, bricka och mutter. Skruvskallarna försänktes på undersidan för att få ner plattan så nära botten som möjligt.
-[bild 1]
+
+![Basplatta med pumpar](/imgs/20190515_195812.jpg)
 
 På tankens lock borrades hål för slangar (i hörnen), för montering av elektronikens basplatta samt ett hål rakt genom basplatta och lock för dragning av strömkablar till pumparna. Lockets plast var tämligen hård att borra i, men skärbrädan var lättborrad.
 [bild 2]
