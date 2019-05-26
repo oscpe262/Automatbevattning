@@ -77,7 +77,8 @@ Ja, det verkar spruta på rätt så skapligt. Vi kompletterar med en matarslang 
 Fungerar till synes som tänkt. En enklare mätning visar på en faktisk pumpkapacitet om ungefär 1,2 l/min, ett värde vi kan använda för att beräkna körtiden för pumparna.
 
 Allt som återstår är då att dra slangar och montera kopplingar.
-![bild 6 (ej tagen)]()
+![Kopplingar 1](imgs/20190526_195435.jpg)
+![Kopplingar 2](imgs/20190526_195516.jpg)
 
 ## Mjukvara
 Då jag är \*nixadmin till yrket föll det sig naturligt att nyttja ett enkelt shellscript till att styra reläerna, vilket i sin tur kan schemaläggas i cron.
